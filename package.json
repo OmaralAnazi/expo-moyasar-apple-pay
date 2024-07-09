@@ -1,0 +1,43 @@
+{
+  "name": "expo-moyasar-apple-pay",
+  "version": "0.0.2",
+  "description": "iOS native apple pay implementation & integration with Moyasar SDK",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "repository": "https://github.com/omaralanazi/expo-moyasar-apple-pay",
+  "bugs": {
+    "url": "https://github.com/omaralanazi/expo-moyasar-apple-pay/issues"
+  },
+  "homepage": "https://github.com/omaralanazi/expo-moyasar-apple-pay#readme",
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module",
+    "open:ios": "open -a \"Xcode\" example/ios",
+    "open:android": "open -a \"Android Studio\" example/android"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "moyasar",
+    "moyasar-apple-pay",
+    "MoyasarApplePay"
+  ],
+  "author": "Omar Alanazi <devomaralanazi@hgmail.com> (https://github.com/omaralanazi)",
+  "license": "MIT",
+  "devDependencies": {
+    "@expo/config-plugins": "7.2.5",
+    "@types/react": "^18.0.25",
+    "expo-module-scripts": "^3.5.2",
+    "expo-modules-core": "^1.5.11"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "^0.74.3"
+  }
+}
