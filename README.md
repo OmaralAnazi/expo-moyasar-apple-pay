@@ -268,7 +268,7 @@ export default function App() {
         onSuccessfulPayment={(payload) => console.log(payload.moyasarPaymentID)} // you can pass any logic to hanlde successful payment here
         onClose={() => console.log("Apple Pay Modal is Closed")}
         onOpen={() => console.log("Apple Pay Modal is Opened")}
-        amount={amount} // In SAR, there is no need to convert cents to SAR (or the respective currency)
+        amount={amount * 100} // In cents, so you have to multiple with 100
         moyasarPublicKey={MoyasarKeys.TEST}
         merchantIdentifier={Merchant}
         countryCode="SA"
@@ -291,15 +291,15 @@ export default function App() {
         ]}
         summaryItems={[ 
           {
-            itemAmount: amount,
+            itemAmount: amount * 100, // convert to cents
             itemTitle: "Investment Fund 1",
           },
           {
-            itemAmount: amount,
+            itemAmount: amount * 100, // convert to cents
             itemTitle: "Investment Fund 2",
           },
           {
-            itemAmount: amount,
+            itemAmount: amount * 100, // convert to cents
             itemTitle: "Investment Fund 3",
           },
         ]}

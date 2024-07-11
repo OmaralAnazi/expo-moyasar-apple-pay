@@ -16,7 +16,7 @@ class PaymentAuthorizationControllerDelegate: NSObject, PKPaymentAuthorizationVi
         do {
             let moyasarPaymentRequest = PaymentRequest(
                 apiKey: self.moyasarApplePayModule.applePayOptions.moyasarPublicKey,
-                amount: self.moyasarApplePayModule.applePayOptions.amount * 100,
+                amount: self.moyasarApplePayModule.applePayOptions.amount, // In cents already
                 currency: self.moyasarApplePayModule.applePayOptions.currency,
                 description: self.moyasarApplePayModule.applePayOptions.description,
                 metadata: self.getMoyasarMetaData()

@@ -33,7 +33,7 @@ export default function App() {
         onSuccessfulPayment={(payload) => console.log(payload.moyasarPaymentID)}
         onClose={() => console.log("Apple Pay Modal is Closed")}
         onOpen={() => console.log("Apple Pay Modal is Opened")}
-        amount={amount}
+        amount={amount*100}
         moyasarPublicKey={MoyasarKeys.TEST}
         merchantIdentifier={Merchant}
         countryCode="SA"
@@ -56,15 +56,15 @@ export default function App() {
         ]}
         summaryItems={[
           {
-            itemAmount: amount,
+            itemAmount: amount*100,
             itemTitle: "Investment Fund 1",
           },
           // {
-          //   itemAmount: amount,
+          //   itemAmount: amount*100,
           //   itemTitle: "Investment Fund 2",
           // },
           // {
-          //   itemAmount: amount,
+          //   itemAmount: amount*100,
           //   itemTitle: "Investment Fund 3",
           // },
         ]}
