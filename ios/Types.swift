@@ -33,12 +33,12 @@ enum ApplePayPaymentStatusSource: String {
 
 struct ApplePayPaymentStatus {
     var paymentStatus: String
-    var amount: Int
+    var amount: Double
     var source: ApplePayPaymentStatusSource
     var moyasar_payment_id: String = ""
     var errorDescription: String = ""
     
-    init(paymentStatus: String, amount: Int, source: ApplePayPaymentStatusSource, moyasar_payment_id: String? = nil, errorDescription: String? = nil) {
+    init(paymentStatus: String, amount: Double, source: ApplePayPaymentStatusSource, moyasar_payment_id: String? = nil, errorDescription: String? = nil) {
         self.paymentStatus = paymentStatus
         self.amount = amount
         self.source = source
@@ -78,7 +78,7 @@ struct ApplePayOptions: Record {
     var moyasarPublicKey: String
 
     @Field
-    var amount: Int
+    var amount: Double
     
     @Field
     var description: String = ""
