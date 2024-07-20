@@ -34,6 +34,7 @@ export default function App() {
         onClose={() => console.log("Apple Pay Modal is Closed")}
         onOpen={() => console.log("Apple Pay Modal is Opened")}
         amount={amount*100}
+        companyName="Villa Capital"
         moyasarPublicKey={MoyasarKeys.TEST}
         merchantIdentifier={Merchant}
         countryCode="SA"

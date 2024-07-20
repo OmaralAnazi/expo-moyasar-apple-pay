@@ -24,6 +24,7 @@ interface ApplePayBtnProps extends MoyasarApplePay.ApplePayOptions {
 const ApplePayBtn: React.FC<ApplePayBtnProps> = (props) => {
   const {
     amount,
+    companyName,
     moyasarPublicKey,
     merchantIdentifier,
     countryCode,
@@ -96,6 +97,7 @@ const ApplePayBtn: React.FC<ApplePayBtnProps> = (props) => {
       onPress={() => {
         MoyasarApplePay.initiateApplePayPayment({
           amount,
+          companyName,
           moyasarPublicKey,
           merchantIdentifier,
           countryCode,

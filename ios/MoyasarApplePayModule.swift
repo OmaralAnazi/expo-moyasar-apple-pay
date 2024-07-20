@@ -100,7 +100,7 @@ public class MoyasarApplePayModule: Module {
             totalAmount += itemAmount
         }
         
-        let totalItem = PKPaymentSummaryItem(label: "Total", amount: NSDecimalNumber(value: totalAmount))
+        let totalItem = PKPaymentSummaryItem(label: applePayOptions.companyName, amount: NSDecimalNumber(value: totalAmount))
         summaryItems.append(totalItem)
         
         return summaryItems

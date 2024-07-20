@@ -23,6 +23,7 @@ export type MetaDataItem = {
 export type ApplePayOptions = {
   moyasarPublicKey: string;
   amount: number;
+  companyName: string;
   description?: string;
   currency?: string;
   merchantIdentifier: string;

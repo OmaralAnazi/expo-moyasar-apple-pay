@@ -81,6 +81,9 @@ struct ApplePayOptions: Record {
     var amount: Int
     
     @Field
+    var companyName: String
+    
+    @Field
     var description: String = ""
     
     @Field

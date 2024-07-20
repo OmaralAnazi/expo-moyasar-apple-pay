@@ -115,6 +115,7 @@ interface ApplePayBtnProps extends MoyasarApplePay.ApplePayOptions {
 const ApplePayBtn: React.FC<ApplePayBtnProps> = (props) => {
   const {
     amount,
+    companyName,
     moyasarPublicKey,
     merchantIdentifier,
     countryCode,
@@ -187,6 +188,7 @@ const ApplePayBtn: React.FC<ApplePayBtnProps> = (props) => {
       onPress={() => {
         MoyasarApplePay.initiateApplePayPayment({
           amount,
+          companyName
           moyasarPublicKey,
           merchantIdentifier,
           countryCode,
@@ -269,6 +271,7 @@ export default function App() {
         onClose={() => console.log("Apple Pay Modal is Closed")}
         onOpen={() => console.log("Apple Pay Modal is Opened")}
         amount={amount * 100} // In cents, so you have to multiple with 100
+        companyName="..."
         moyasarPublicKey={MoyasarKeys.TEST}
         merchantIdentifier={Merchant}
         countryCode="SA"
