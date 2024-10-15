@@ -4,7 +4,7 @@ export default {
   expo: {
     name: "moyasar-apple-pay-example",
     slug: "moyasar-apple-pay-example",
-    version: "0.0.1",
+    version: "1.0.0",
     orientation: "portrait",
     icon: "./assets/icon.png",
     userInterfaceStyle: "light",
