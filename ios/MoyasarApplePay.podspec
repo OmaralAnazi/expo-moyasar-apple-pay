@@ -12,11 +12,11 @@ Pod::Spec.new do |s|
   s.homepage       = package['homepage']
   s.platform       = :ios, '13.0'
   s.swift_version  = '5.4'
-  s.source         = { git: 'https://github.com/WadhahEssam/moyasar-apple-pay' }
+  s.source         = { git: 'https://github.com/OmaralAnazi/expo-moyasar-apple-pay' }
   s.static_framework = true
 
   s.dependency 'ExpoModulesCore'
-  s.dependency 'MoyasarSdk', '~> 3.0.0'
+  s.dependency 'MoyasarSdk', '~> 2.0.1'
 
   # Swift/Objective-C compatibility
   s.pod_target_xcconfig = {
